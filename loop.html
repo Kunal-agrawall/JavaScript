@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <h1 id="hw">Hello duniya</h1>
+    <script>
+        var ar = [2,4,5,7,9,"world", {a:"Hello"}]
+        for(var i in ar){
+            console.log(ar[i]); //print with index
+        }
+        for(var i of ar){
+            console.log(i); //print without index
+        }
+        console.log(ar[6].a) //printing an elememt of object of array
+        ar[6].b = "kunal" //adding an element in object 
+        console.log(ar[6])
+        for(var i=0;i<10;i++){
+
+            let hw = document.getElementById("hw")
+            console.log(hw)
+        }
+
+</script>
+</body>
+</html>

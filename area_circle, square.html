@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area calculator</title>
+</head>
+<body id="cd">
+    <h1><em>Calculate Circle</em></h1>
+    <input type="text" id="tx1">
+    <button onmouseover="area_circle()">Click</button>
+    <h1 id="out"></h1>
+    <br>
+    <h1><em>Calculate Rectangle</em></h1>
+    <input type="text" id="tx2">
+    <input type="text" id="tx3">
+    <button onmouseover="area_rectangle()">Click</button>
+    <h1 id="tout"></h1>
+    
+    
+    <script>
+      
+    // In onmouseover, we don't need to click
+    // but to put cursor on it.
+    
+    function area_circle() {
+      var a = parseInt(document.getElementById('tx1').value)
+      document.getElementById('out').innerHTML = 22/7*a*a
+    }
+    
+    
+    function area_rectangle() {
+      var a = parseInt(document.getElementById('tx2').value)
+      var b = parseInt(document.getElementById('tx3').value)
+      document.getElementById('tout').innerHTML = a*b
+    }
+    
+    </script>
+    </body>
+</html>

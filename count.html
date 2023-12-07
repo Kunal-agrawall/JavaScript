@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Count</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Word Count</h1>
+    <textarea id="text"></textarea>
+    <h2 id="count">0</h2>
+
+    <script>
+        $(document).ready(function() {
+            $('#text').on('input', function() {
+                let text = $(this).val();
+                let words = text.trim().split(/\s+/);
+                $('#count').text(words.length);
+            });
+        });
+    </script>
+</body>
+</html>

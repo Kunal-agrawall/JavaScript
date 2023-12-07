@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bd">
+    <h1 id="abc" onclick="fun()">Hello</h1>
+    <button onclick="fun()">red</button>
+    
+    <h1 id="out"></h1>
+    <script>
+     var a = document.getElementById('abc');
+            a.style.color = "green"
+            console.log(a);
+            function fun(){
+                document.getElementById('bd').style.backgroundColor="red"
+                document.getElementById('abc').innerHTML = "world"
+            }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="#">
+   <label>Name</label>
+    <input type="text" id="text1">
+    <small  style="color: red;" id="msg1"></small>
+    <label>Password</label>
+    <input type="password" id="text2">
+    <small style="color: red;" id="msg2"></small>
+ <button onclick="fun()">submit</button>
+    
+</form>
+
+    <script>
+        function fun(){
+    
+            var name= document.getElementById("text1").value;
+            var pass= document.getElementById("text2").value;
+            console.log(name);
+            console.log(pass);
+            if(name==='')
+            {
+                document.getElementById("msg1").innerHTML="This field is required";
+            }
+            if(pass==='')
+            {
+                document.getElementById("msg2").innerHTML=" This field is required";
+            }
+        }
+    
+        // if(pass.length < 8) {
+        //        alert('Password must be at least 8 characters long.');
+        //        event.preventDefault();
+        //     }
+             
+        //     if(pass.length > 20) {
+        //        alert('Password cannot be more than 20 characters long.');
+        //        event.preventDefault();
+        //     }
+        document.getElementById('passwordForm').addEventListener('submit', function(event) {
+ event.preventDefault(); // Prevent the form from submitting
+  
+ var password = document.getElementById('passwordInput').value;
+ var minLength = 8; // Set the minimum length
+ var maxLength = 20; // Set the maximum length
+  
+ if(password.length < minLength) {
+    // If the password is less than the minimum length
+    document.getElementById('error').innerHTML = 'Password should be at least ' + minLength + ' characters';
+ } else if(password.length > maxLength) {
+    // If the password is more than the maximum length
+    document.getElementById('error').innerHTML = 'Password should be at most ' + maxLength + ' characters';
+ } else {
+    // If the password length is within the specified range
+    document.getElementById('error').innerHTML = '';
+    
+    // Uncomment the following line if you want to submit the form after validation
+    // this.submit();
+ }
+});
+    </script>
+
+
+</body>
+</html>

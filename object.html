@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+   
+<script>
+// function user(name,age,income,position){
+//     this.name = name;
+//     this.age = age;
+//     this.income = income;
+//     this.position = "position";
+// }
+// const Kunal = new user
+
+const obj= {
+    name: 'Kunal',
+    age: 19,
+    skills: ["python", "java"],
+    position: ['CEO'],
+    Income: '₹ 120000000',
+}
+console.log(obj);
+obj.position[1]='MD',
+// we can't print whole object, but we can print elements of object.
+// So here I am printing obj.name
+document.write(obj.name)
+
+
+const obj1 = {
+ screen_size : "6inch",
+ color : "blue",
+ brand : "vivo",
+ price : CALCULATE(),
+ ROM : "64GB",
+ RAM : "4GB",
+ processor : "octa core",
+ battery : "5000mAh",
+ camera : "13MP",
+}
+function CALCULATE(){
+    return 20000;
+}
+console.log(obj1);
+
+
+const student = {
+    firstName: 'Kunal',
+    lastName: 'Garg',   
+    Course: 'B.tech',
+    Branch: 'C.S.E',
+    Semester: 3,
+    Roll_No: 2204710100063,
+    age: 19,
+
+
+}
+console.log(student);
+
+</script>
+    
+</body>
+</html>
