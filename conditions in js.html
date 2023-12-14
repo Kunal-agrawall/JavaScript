@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+var d= new Date()
+var time = d.getHours()
+var theDay = d.getDay()
+if (time>19){
+    document.write("  <h3> Good evening to all students of AKTU  </h3> ")
+}
+if (time==13) {
+    document.write("  <h3> Lunch-time!  </h3> ")
+    
+}
+else if (time>12 && time<16){
+    document.write("  <h3> Good afternoon to all students of AKTU  </h3> ")
+
+}
+else 
+{
+    document.write("  <h3> Hello World!  </h3> ")
+
+}
+switch (theDay) {
+    case 5:
+        document.write("Finally Friday, sports lecture")
+        break;
+    case 6:
+        document.write("It's Saturday, tomorrow is Sunday")
+        break;
+        case 0:
+        document.write("Sleepy Sunday")
+        break;
+
+    default:
+        document.write("I'm waiting for Activity lecture")
+        break;
+}
+
+    </script>
+    
+</head>
+<body>
+</body>
+</html>
