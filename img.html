@@ -6,7 +6,8 @@
     <title>Add event Listener</title>
 </head>
 <body>
-    <h1 id="ab">hlo</h1>
+    <h1 id="ab" >hlo</h1>
+    <img src="kunal (2).jpg" id="im1" >
     <script>
         // document.getElementById("ab").onclick = event;
         // function event(){
@@ -18,14 +19,19 @@
         // document.getElementById("ab").addEventListener("mouseout",()=>{
         //     document.getElementById("ab").style.color = "blue";
         // })
-        document.getElementById("ab").addEventListener("click",()=>{
-            document.getElementById("ab").style.color = "blue";
+        // document.getElementById("ab").addEventListener("click",()=>{
+        //     document.getElementById("ab").style.color = "blue";
             
-            document.getElementById("ab").style.backgroundColor = "yellow"
-        })
+          //  document.getElementById("im1").style.backgroundColor = "yellow"
+        // })
+        document.getElementById("im1").addEventListener("mouseover",()=>{
+        document.getElementById("im1").style.filter = "grayscale(100%)"
+                })
+         document.getElementById("im1").addEventListener("mouseout",()=>{
+        document.getElementById("im1").style.filter = "grayscale(0%)"
+                })
                         
         
 </script>
-    <!-- <img src="" id="im1"> -->
 </body>
 </html>
